@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginWrapper {
+  height: 80%;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.123);
+}
+
+.loginCard1 {
+  width: 50%;
+  margin-left: 5rem;
+}
+
+.loginCard2 {
+  width: 45%;
+}
+
+.card2Logo {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.insta-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3rem;
+  padding-bottom: 2rem;
+}
+
+.wordLogo {
+  width: 45%;
+}
+
+.logo {
+  margin-left: 5%;
+  width: 18%;
+}
+
+.logo:hover {
+  transform: rotate(45deg);
+}
+
+@media screen and (max-width: 620px) {
+  .signupCard1 {
+    width: 60%;
+  }
+
+  .signupCard2 {
+    width: 35%;
+  }
+}
