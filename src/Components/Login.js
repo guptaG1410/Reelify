@@ -1,14 +1,16 @@
 import * as React from "react";
+import { useContext } from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
-import { Button, CardActionArea, CardActions, Link } from "@mui/material";
+import { Button, CardActionArea, CardActions} from "@mui/material";
 import "./Login.css";
 import word_logo from "./Images/word_logo.png";
 import logo from "./Images/logo.jpg";
 import login from "./Images/login.png";
 import TextField from "@mui/material/TextField";
-import CloudUploadIcon from "@material-ui/icons/CloudUpload";
+import { AuthContext } from "../Context/AuthContext";
+import { Link } from "react-router-dom";
 
 // const useStyles = makeStyles((theme) => {
 //     text: {
@@ -18,6 +20,8 @@ import CloudUploadIcon from "@material-ui/icons/CloudUpload";
 
 export default function Login() {
   //   const classes = useStyles();
+  const store = useContext(AuthContext);
+  console.log(store);
 
   return (
     <div className="body">
